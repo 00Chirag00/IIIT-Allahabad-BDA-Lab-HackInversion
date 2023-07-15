@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Users </title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img id="logom" src="logo.png" alt="">
+                        </span>
+                        <span class="title">Hack Inversion</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index1.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="admin.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">User Accounts</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="manage.html">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Manage Accounts</span>
+                    </a>
+                </li>
+
+                <li>
+
+                    <li>
+                        <a href="research_papers1.html">
+                            <span class="icon">
+                               <img  class="iconsadmin" src="reasearch.png" alt="">
+                            </span>
+                            <span class="title">Research Paper</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="courses1.html">
+                            <span class="icon">
+                                <img  class="iconsadmin"  src="monitor.png" alt="">
+                            </span>
+                            <span class="title">Courses</span>
+                        </a>
+                    </li>
+    
+                    <li>
+                    <a href="projects1.html">
+                        <span class="icon">
+                            <img  class="iconsadmin" src="project.png" alt="">
+                        </span>
+                        <span class="title">Projects</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <!-- <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div> -->
+
+                <div class="user">
+                    <img src="customer.png" alt="">
+                </div>
+            </div>
+
+            <!-- ======================= Cards ================== -->
+            <div><div class = "box-container1">
+				<label style="padding: 2%;">Username</label> <input id="Namebox" type="text" >
+    			<label style="padding: 2%;">Email</label> <input id="IDbox" type="email">
+   				 <label style="padding: 2%;">Department</label> <input id="Depbox" type="text">
+				<label style="padding: 2%;">Password</label> <input id="Passbox" type="text">
+			</div>
+            <div class="cardBox">
+            <button id="Selbtn">
+                <div class="card">
+                    <div>
+                        <!-- <div class="numbers" id="abcd"></div> -->
+                        <div class="cardName" >Find User</div>
+                    </div>
+
+                    <div class="iconBx">
+                        <!-- <ion-icon name="eye-outline"></ion-icon> -->
+                    </div>
+                </div>
+            </button>
+                <button id="Insbtn">
+                <div class="card">
+                    
+                    <div>
+                        <!-- <div class="numbers" id="btech"></div> -->
+                        <div class="cardName">Add User</div>
+                    </div>
+                    
+
+                    <div class="iconBx">
+                        <!-- <ion-icon name="cart-outline"></ion-icon> -->
+                    </div>
+                </div>
+            </button>
+        <button id="Updbtn">
+                <div class="card">
+                    <div>
+                        <!-- <div class="numbers" id="mtech"></div> -->
+                        <div class="cardName">Update User</div>
+                    </div>
+
+                    <!-- <div class="iconBx">
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div> -->
+                </div>
+            </button>
+            <button id="Delbtn">
+                <div class="card">
+                    <div>
+                        <!-- <div class="numbers" id="phd"></div> -->
+                        <div class="cardName">Delete User</div>
+                    </div>
+
+                    <!-- <div class="iconBx">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div> -->
+                </div>
+            </div>
+        </button>
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2 style="padding-left: 10px;">Recent Projects</h2>
+                        <!-- <a href="#" class="btn">View All</a> -->
+                    </div>
+
+                    <table class="t">              
+						<thead class="thead">
+							<th class="th">S No</th>
+							<th class="th">Username</th>
+							<th class="th">Email</th>
+							<th class="th">
+                                Department
+                            </th>
+							</thead>
+							<tbody id="tbody1"> 
+							  
+							</tbody>
+						
+					  </table>
+                </div>
+
+              
+    <!-- =========== Scripts =========  -->
+    <!-- <script src="assets/js/main.js"></script> -->
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+    <script type ="module">
+        // let menuicn = document.querySelector(".menuicn");
+        //   let nav = document.querySelector(".navcontainer");
+         
+        //   menuicn.addEventListener("click",()=>
+        //   {
+        //       nav.classList.toggle("navclose");
+        //   })
+            // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+       // import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+    apiKey: "AIzaSyAv_Xz86mYp5v2AF5zCW3UTKfawoMG6CmY",
+    authDomain: "bdalab-a74ef.firebaseapp.com",
+    databaseURL: "https://bdalab-a74ef-default-rtdb.firebaseio.com",
+    projectId: "bdalab-a74ef",
+    storageBucket: "bdalab-a74ef.appspot.com",
+    messagingSenderId: "888411043750",
+    appId: "1:888411043750:web:e75d5b675546cd84900167"
+  };
+      
+        // Initialize Firebase
+// const app = firebase.initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig);
+// Get database reference
+
+		
+		
+      //  const analytics = getAnalytics(app);
+
+      import {getDatabase,get,ref,set,child,update,remove,onValue,query,limitToFirst,limitToLast,orderByChild,startAt,startAfter,endAt,endBefore,equalTo}
+      from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+       const db=getDatabase();
+	   
+       var namebox=document.getElementById("Namebox");
+       var idbox=document.getElementById("IDbox");
+       var depbox=document.getElementById("Depbox");
+	   var passbox=document.getElementById("Passbox");
+       
+	   var cntl=document.getElementById("count");
+
+       var insbtn=document.getElementById("Insbtn");
+       var selbtn=document.getElementById("Selbtn");
+       var updbtn=document.getElementById("Updbtn");
+       var delbtn=document.getElementById("Delbtn");
+
+       function InsertData(){
+        set(ref(db,"UsersList/"+namebox.value),{
+            Username: namebox.value,
+            Email:idbox.value,
+            Department:depbox.value,
+			Password:passbox.value,
+        })
+        .then(()=>{
+            alert("data stored successfully");
+        })
+        .catch((error)=>{
+            alert("unsuccessful,error"+error);
+        });
+       }
+
+       function SelectData(){
+        const dbref =ref(db);
+
+        get(child(dbref,"UsersList/"+namebox.value)).then((snapshot)=>{
+            if(snapshot.exists()){
+                idbox.value=snapshot.val().Email;
+                passbox.value=snapshot.val().Password;
+				depbox.value=snapshot.val().Department;
+            }
+            else{
+             alert("NO DATA FOUND");
+            }
+        })
+        .catch((error)=>{
+            alert("UNSUCCESSFUL,ERROR"+error);
+        })
+       }
+
+       function UpdateData(){
+        update(ref(db,"UsersList/"+namebox.value),{
+            Username: namebox.value,
+            Email: idbox.value,
+            Department:depbox.value,
+			Password:passbox.value,
+        })
+        .then(()=>{
+            alert("data updated successfully");
+        })
+        .catch((error)=>{
+            alert("unsuccessful,error"+error);
+        });
+       }
+
+       function RemoveData(){
+        remove(ref(db,"UsersList/"+namebox.value))
+        .then(()=>{
+            alert("data removed successfully");
+        })
+        .catch((error)=>{
+            alert("unsuccessful,error"+error);
+        });
+       }
+
+	   const dbref = ref(db);
+
+		// Get member count and update label
+		get(ref(db,"UsersList/"))
+		.then(snapshot => {
+			const membersCount = Object.values(snapshot.val()).length;
+			document.getElementById('abcd').textContent = `${membersCount}`;
+		});
+
+
+
+
+ const usersRef = ref(db, 'UsersList/');
+get(usersRef).then((snapshot) => {
+  let countb = 0;
+  let countm = 0;
+  let countp = 0;
+  snapshot.forEach((childSnapshot) => {
+    const department = childSnapshot.child("Department").val();
+    if (department === "BTech") {
+      countb++;
+    }
+    else if (department === "MTech") {
+      countm++;
+    }
+    else if (department === "Phd") {
+      countp++;
+    }
+  });
+  document.getElementById('btech').textContent = `${countb}`;
+  document.getElementById('mtech').textContent = `${countm}`;
+  document.getElementById('phd').textContent = `${countp}`;
+ 
+}).catch((error) => {
+  console.error(error);
+});
+
+
+
+
+
+
+       insbtn.addEventListener('click',InsertData);
+       selbtn.addEventListener('click',SelectData);
+       updbtn.addEventListener('click',UpdateData);
+       delbtn.addEventListener('click',RemoveData);
+
+	   var stdNo=0;
+	   var tbody = document.getElementById("tbody1");
+      function AddItemToTable(username,email,department){
+		let trow= document.createElement("tr");
+		let td1 = document.createElement('td');
+		let td2 = document.createElement('td');
+		let td3 = document.createElement('td');
+		let td4 = document.createElement('td');
+        let span = document.createElement('span');
+ 
+		// let label = document.createElement('lable');
+		//let td5 = document.createElement('td');
+		td1.innerHTML=++stdNo;
+		// cnt.value()=stdNo;
+		td2.innerHTML= username;
+		td3.innerHTML= email;
+		//td5.innerHTML= password;
+        span.innerHTML = department;
+  if (department === "B-Tech") {
+  span.style.display = "inline-block";
+  span.style.padding= "7px";
+  span.style.backgroundColor = "#2196f3";
+  span.style.color = "white"
+  span.style.fontWeight= "bold";
+  span.style.borderRadius =" 5px"
+ }
+
+   else if (department === "M-Tech") {
+    span.style.backgroundColor = "green";
+    span.style.color = "white";
+    span.style.display = "inline-block";
+  span.style.padding= "7px";
+ 
+  span.style.color = "white"
+  span.style.fontWeight= "bold";
+  span.style.borderRadius =" 5px"
+  } else if (department === "PhD") {
+    span.style.backgroundColor = "orange";
+    span.style.color = "white";
+    span.style.display = "inline-block";
+  span.style.padding= "7px";
+  
+  span.style.color = "white"
+  span.style.fontWeight= "bold";
+  span.style.borderRadius =" 5px"
+  } else if (department === "MBA") {
+    span.style.backgroundColor = "purple";
+    span.style.color = "white";
+    span.style.display = "inline-block";
+  span.style.padding= "7px";
+ 
+  span.style.color = "white"
+  span.style.fontWeight= "bold";
+  span.style.borderRadius =" 5px"
+  }
+        td4.appendChild(span);
+		trow.appendChild(td1);
+		trow.appendChild(td2);
+		trow.appendChild(td3);
+		trow.appendChild(td4);
+		//trow.appendChild(td5);
+  
+tbody.appendChild(trow);
+}
+	  function AddAllItemsToTable(UsersList){
+		stdNo=0;
+		tbody.innerHTML="";
+		UsersList.forEach(element => {
+			AddItemToTable(element.Username,element.Email,element.Department)
+		});
+
+	  }
+	    // const coll = collection(db, "UsersList/");
+        // const snapshot = await getCountFromServer(coll);
+        // cntl.value('count: ', snapshot.data().count);
+     
+
+
+
+//         function GetAllDataOnce() {
+//   const department = document.getElementById("department-sel).value;
+//   let queryRef = ref(db, "UsersList/");
+
+//   if (department !== "") {
+//     queryRef = query(queryRef, orderByChild("Department"), equalTo(department));
+//   }
+
+//   get(queryRef)
+//     .then((snapshot) => {
+//       const students = [];
+//       snapshot.forEach((childSnapshot) => {
+//         students.push(childSnapshot.val());
+//       });
+//       AddAllItemsToTable(students);
+//     })
+//     .catch((error) => {
+//       console.error(error);
+//     });
+// }
+
+	  function GetAllDataOnce(){
+		const que =query(ref(db,"UsersList/"),limitToFirst(10),orderByChild("Department"));
+		get(que)
+		.then((snapshot)=>{
+			var students =[];
+			snapshot.forEach(childSnapshot =>{
+				students.push(childSnapshot.val());
+			});
+			AddAllItemsToTable(students);
+
+		})
+	  }
+	//   function chiggi(){
+	//    ref.child('UsersList').once('value')
+    //     .then(snapshot => {
+    //       const membersCount = snapshot.val().length;
+    //       document.getElementById('memberCountLabel').textContent = `There are ${membersCount} members in the list.`;
+    //     });
+	// }
+
+	//   function GetAllDataRealTime(){
+
+
+
+	// 	const dbRef =ref(db,"UsersList/");
+	// 	onValue(dbRef,(snapshot) => {
+	// 		var students =[];
+	// 		//var cntt = students.size();
+	// 		snapshot.forEach(childSnapshot=>{
+	// 			students.push(childSnapshot.val());
+			
+	// 	});
+	// 	AddAllItemsToTable(students);
+	// 	// chiggi(cntt);
+	//     })
+	//   }
+// 	  ref.child('UsersList/').once('value')
+//   .then(snapshot => {
+//     const membersCount = snapshot.val().length;
+//     document.getElementById('memberCountLabel').textContent = `There are ${membersCount} members in the list.`;
+//   });
+     window.onload = GetAllDataOnce;
+//   import{grtFirestore} from 'firebase/firestore';
+//   const df =getFirestore();
+//   const userCol = collection(df,'ex')
+	//  $('button').on('click', function(){
+	// $('table').toggleClass('recent-Articles');
+    //   });
+    let list = document.querySelectorAll(".navigation li");
+
+function activeLink() {
+  list.forEach((item) => {
+    item.classList.remove("hovered");
+  });
+  this.classList.add("hovered");
+}
+
+list.forEach((item) => item.addEventListener("mouseover", activeLink));
+
+// Menu Toggle
+let toggle = document.querySelector(".toggle");
+let navigation = document.querySelector(".navigation");
+let main = document.querySelector(".main");
+
+toggle.onclick = function () {
+  navigation.classList.toggle("active");
+  main.classList.toggle("active");
+};
+        </script>
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

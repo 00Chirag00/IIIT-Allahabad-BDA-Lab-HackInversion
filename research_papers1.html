@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>BDA Lab</title>
+    <link rel="stylesheet" href="css/research_paper.css">
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="people.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="sub_page">
+    <div id="ayush">
+        <div class="hero_area">
+            <header class="header_section">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg custom_nav-container ">
+                        <a class="navbar-brand" href="index.html">
+                            <img id="logo" src="images/logo.png" />
+                        </a>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="s-1"> </span>
+                            <span class="s-2"> </span>
+                            <span class="s-3"> </span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                                <ul class="navbar-nav  ">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index1.html">Home <span
+                                                class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index1.html#about_us"> About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="faculty1.html"> Faculty</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index1.html#service_id"> Services </a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#ResearchPaper">Research Papers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="courses1.html">Courses</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="projects1.html">Projects</a>
+                                      </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index1.html#contact_us">Contact Us</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <!-- <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item">
+                                        <a id="userlink" class="nav-link" href="register.html">Register</a>
+                                    </li>
+                                </ul>
+
+                                <div class="quote_btn-container ">
+
+                                    <span>
+                                        <a id="login" class="nav-link" href="login.html">Login</a>
+                                    </span>
+
+
+                                </div>
+                            </div> -->
+
+                            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                                <ul class="navbar-nav ">
+                                  <li class="nav-item">
+                                    <a id="userlink" class="nav-link" href="admin.html">Back to Dashboard</a>
+                                  </li>
+                                </ul>
+                  
+                                <!-- <div class="quote_btn-container ">
+                  
+                                  <span>
+                                    <a id="login" class="nav-link" href="login.html">Login as Student</a>
+                                  </span>
+                  
+                  
+                                </div> -->
+                              </div>
+    
+
+
+
+
+
+
+
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- end header section -->
+        </div>
+
+        <!-- about section -->
+
+        <section class="about_section ">
+            <!-- contact section -->
+            <section class="timeline">
+                <h3 id="resarching">Research Publications</h3>
+
+                <section id="addnew">
+                    <div id="content">
+                        <h4>Add New Publication ? </h4>
+                        <form id="add-book-form">
+                            <input type="text" name="title" placeholder="Title">
+                            <input type="text" name="author1" placeholder="Author 1">
+                            <input type="text" name="author2" placeholder="Author 2"> 
+                            <input type="text" name="author3" placeholder="Author 3">
+                            <input type="text" name="text" placeholder="Text">
+                            <input type="text" name="link" placeholder="Link">
+                            <input type="date" name="date" placeholder="Date">
+                            <button id="pbl">Add Publication</button>
+                        </form>
+                        <ul id="book-list"></ul>
+                        <div class="sect">
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <div class="column">
+                    <!-- <div class="row">
+                        <div class="text">
+                            <h3>Divya Tomar, Sonali Agarwal </h3>
+                            <p>“ Leaf Recognition for Plant Classification Using Direct Acyclic Graph Based Multi-Class
+                                Least Squares Twin Support Vector Machine” International Journal of Image and Graphics
+                                16, 1650012 (2016) [17 pages] DOI: <a
+                                    href="http://dx.doi.org/10.1142/S0219467816500121">
+                                    http://dx.doi.org/10.1142/S0219467816500121</a> </p>
+                        </div>
+                        <div class="icon">
+                            <div>
+                                <i class="bi bi-patch-check-fill"></i>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <time>2001-11-30 Saturday</time>
+                        </div>
+                    </div> -->
+                    <!-- <div class="row">
+                        <div class="text">
+                            <h3> Divya Tomar, Sonali Agarwal </h3>
+                            <p>“ Leaf Recognition for Plant Classification Using Direct Acyclic Graph Based Multi-Class
+                                Least Squares Twin Support Vector Machine” International Journal of Image and Graphics
+                                16, 1650012 (2016) [17 pages] DOI: <a
+                                    href="http://dx.doi.org/10.1142/S0219467816500121">
+                                    http://dx.doi.org/10.1142/S0219467816500121 </a></p>
+                        </div>
+                        <div class="icon">
+                            <div>
+                                <i class="bi bi-patch-check-fill"></i>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <time>2002-11-26 Saturday</time>
+                        </div>
+                    </div> -->
+                    <!-- <div class="row">
+                        <div class="text">
+                            <h3> Bakshi Rohit Prasad, Sonali Agarwal </h3>
+                            <p><a href="https://link.springer.com/article/10.1007/s13042-016-0513-3"> Critical parameter
+                                    analysis of Vertical Hoeffding Tree for optimized performance using
+                                    SAMOA</a>, International Journal of Machine Learning and Cybernetics, (2016),
+                                pp.1-14.
+                                Scopus Indexed, Impact Factor=1.110</p>
+                        </div>
+                        <div class="icon">
+                            <div>
+                                <i class="bi bi-patch-check-fill"></i>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <time>2004-03-11 Monday</time>
+                        </div>
+                    </div>
+                     -->
+
+                    <!-- <div class="row">
+                        <div class="text">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                        <div class="icon">
+                            <div>
+                                <i class="bi bi-patch-check-fill"></i>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <time></time>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+
+
+            <!-- end contact section -->
+        </section>
+
+        <!-- end about section -->
+
+
+        <div class="footer_bg">
+
+
+
+            <!-- info section -->
+    <section class="info_section layout_padding2">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="info_logo">
+                <h3>
+                  Hack Inversion
+                </h3>
+                <p>
+                  Hack Inversion is a leading Big Data Analyst Company offering Research, Internships, Courses and other
+                  opportunities for college students.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info_links">
+                <h4>
+                  BASIC LINKS
+                </h4>
+                <ul class="  ">
+                  <li class="">
+                    <a class="" href="index1.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="">
+                    <a class="#about_us" href="faculty1.html"> Faculty</a>
+                  </li>
+                  <li class="active">
+                    <a class="" href="research_papers1.html"> Research Papers </a>
+                  </li>
+                  <li class="">
+                    <a class="" href="projects1.html">Projects</a>
+                  </li>
+                  <li class="">
+                    <a class="" href="courses1.html">Courses</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info_contact">
+                <h4>
+                  CONTACT DETAILS
+                </h4>
+                <a href="">
+                  <div class="img-box">
+                    <img src="images/telephone-white.png" width="12px" alt="">
+                  </div>
+                  <p>
+                    +91 9554130568
+                  </p>
+                </a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                  <div class="img-box">
+                    <img src="images/envelope-white.png" width="18px" alt="">
+                  </div>
+                  <p>
+                    HackInversion@gmail.com
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img class="iiita"
+                src="https://upload.wikimedia.org/wikipedia/en/2/2e/Indian_Institute_of_Information_Technology%2C_Allahabad_Logo.png"
+                alt="IIITA Logo">
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- end info_section -->
+
+
+            <!-- footer section -->
+            <section class="container-fluid footer_section">
+                <div class="container">
+                    <p>
+                        &copy; <span id="displayYear"></span> All Rights Reserved By
+                        <a href=""> Hack Inversion</a>
+                    </p>
+                </div>
+            </section>
+            <!-- footer section -->
+
+        </div>
+        <h3 id="hh"></h3>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+
+            // import { getDatabase, ref, set, child, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyAv_Xz86mYp5v2AF5zCW3UTKfawoMG6CmY",
+                authDomain: "bdalab-a74ef.firebaseapp.com",
+                databaseURL: "https://bdalab-a74ef-default-rtdb.firebaseio.com",
+                projectId: "bdalab-a74ef",
+                storageBucket: "bdalab-a74ef.appspot.com",
+                messagingSenderId: "888411043750",
+                appId: "1:888411043750:web:e75d5b675546cd84900167"
+            };
+
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+            import {
+                getFirestore, collection, doc, getDocs, addDoc, deleteDoc, query,
+                where,
+            } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js";
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+
+            // Get the collection reference and the book list element
+            const colRef = collection(db, 'books');
+            const bookList = document.getElementById("book-list");
+            // Render all books in the collection
+            getDocs(colRef)
+                .then((snapshot) => {
+                    // snapshot.forEach((docs) => {
+                    //     renderBook(docs);
+                    // });
+                    setupGuides(snapshot.docs);
+                })
+                .catch((error) => {
+                    console.log("Error getting documents: ", error);
+                });
+            //Function to display my css
+            const guideList = document.querySelector('.column');
+            console.log(guideList);
+
+            //setup guides
+            // const setupGuides = (data) => {
+            //     let html = '';
+            //     data.forEach(doc => {
+            //         const guide = doc.data();
+
+            //         // console.log(guide);
+            //         const li = `
+                   
+                    
+                    
+            //         <div class="row">
+            //             <div class="text">
+            //                 <h3>${guide.author} </h3>
+                            
+            //                 <p><b>"${guide.title}"</b>${guide.text} &nbsp; <a href="${guide.link}">${guide.link}</a></p>
+            //             </div>
+            //             <div class="icon">
+            //                 <div>
+            //                     <i class="bi bi-patch-check-fill"></i>
+            //                 </div>
+            //             </div>
+            //             <div class="time">
+            //                 <time>${guide.date}</time>
+            //             </div>
+            //         </div>
+                    
+                   
+            //         `;
+            //         html += li;
+
+            //         guideList.innerHTML = html;
+            //     })
+            // }
+            const setupGuides = (data) => {
+                let html = '';
+                data.forEach(docs => {
+                    const guide = docs.data();
+
+                    if(guide.author1==="")var a1="";
+                    else var a1=guide.author1+' |';
+                    if(guide.author2==="")var a2="";
+                    else var a2=guide.author2+' |';
+                    if(guide.author3==="")var a3="";
+                    else var a3=guide.author3+' |';
+
+                    const li = `
+                    <div class="row">
+                        <div class="text">
+                        <h3>${a1} ${a2} ${a3}</h3>
+                        <p><b>"${guide.title}"</b>${guide.text} &nbsp; <a href="${guide.link}">${guide.link}</a></p>
+                        </div>
+                        <div class="icon">
+                            <div>
+                                <span><i class="bi bi-patch-check-fill"></i></span>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <div>
+                                <span><i class="bi bi-trash-fill delete-icon" data-id="${docs.id}"></i></span>
+                            </div>
+                        </div>
+                        
+                        <div class="time">
+                        <time>${guide.date}</time>
+                        </div>
+                    </div>
+                    `;
+                    html += li;
+
+                    guideList.innerHTML = html;
+
+                    const deleteIcons = document.querySelectorAll('.delete-icon');
+                    deleteIcons.forEach(icon => {
+                    icon.addEventListener('click', (e) => {
+                        const id = e.target.getAttribute('data-id');
+                        // console.log(id);
+                        deleteDoc(doc(db, "books", id)).then(() => {
+                            alert("Data has been deleted successfully.");
+                            console.log("Data has been deleted successfully.")
+                        })
+                        .catch(error => {
+                            console.log(error);
+                        })
+                    });
+                    });
+                });
+            }
+
+
+            // Function to render a book in the book list
+            function renderBook(book) {
+                let li = document.createElement('li');
+                let title = document.createElement('span');
+                let author = document.createElement('span');
+                let cross = document.createElement('div');
+
+
+                li.setAttribute('data-id', book.id);
+                title.textContent = book.data().title;
+                author.textContent = book.data().author;
+                cross.textContent = 'x';
+
+                li.appendChild(title);
+                li.appendChild(author);
+                li.appendChild(cross);
+
+                bookList.append(li);
+
+
+                //deleting data
+                cross.addEventListener('click', async (e) => {
+                    e.stopPropagation();
+                    let id = e.target.parentElement.getAttribute('data-id');
+                    // console.log(doc);
+                    // alert(id);
+
+                    deleteDoc(doc(db, "books", id)).then(() => {
+                        alert("Data has been deleted successfully.");
+                        console.log("Data has been deleted successfully.")
+                    })
+                        .catch(error => {
+                            console.log(error);
+                        })
+
+                });
+
+            }
+
+            // Add a new book to the collection
+            const form = document.getElementById('add-book-form');
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const booksCollection = collection(db, "books"); // Get a reference to the "books" collection
+
+                try {
+                    await addDoc(booksCollection, {
+                        title: form.title.value,
+                        author1: form.author1.value,
+                        author2: form.author2.value,
+                        author3: form.author3.value,
+                        date: form.date.value,
+                        link: form.link.value,
+                        text: form.text.value
+                    });
+                    form.title.value = '';
+                    form.author1.value = '';
+                    form.author2.value = '';
+                    form.author3.value = '';
+                    form.date.value = '';
+                    form.link.value = '';
+                    form.text.value = '';
+                    alert("Data added successfully.");
+                } catch (error) {
+                    console.error('Error adding document: ', error);
+                }
+            });
+
+            // // Show the sign up form
+            // const signup = document.getElementById('signup');
+            // const signupForm = document.getElementById('sign-up-form');
+            // function showsignup() {
+            //     signup.style.display = 'block';
+            //     signupForm.reset();
+            // }
+
+
+            // //Shows the login modal
+            // function showlogin() {
+            //     signup.style.display = "none";
+            //     login.style.display = "block";
+            // };
+        </script>
+        <script>
+            //--------------REFERENCES------------//
+            let userlink = document.getElementById('userlink');
+            let signoutlink = document.getElementById('login');
+            let header = document.getElementById('hh');
+            var currentUser = null;
+
+            //--------------FUNCTIONS------------//
+
+            function getUsername() {
+                let keepLoggedIn = localStorage.getItem("keepLoggedIn");
+
+                if (keepLoggedIn == "yes") {
+                    currentUser = JSON.parse(localStorage.getItem('user'));
+                }
+                else {
+                    currentUser = JSON.parse(sessionStorage.getItem('user'));
+                }
+            }
+
+            function Signout() {
+                sessionStorage.removeItem('user');
+                localStorage.removeItem('user');
+                localStorage.removeItem('keepLoggedIn');
+                window.location = "index.html";
+            }
+
+            //--------------WINDOW LOADS------------//
+
+            window.onload = function () {
+                getUsername();
+                // if (currentUser == null) {
+                //     userlink.innerText = "Back to Dashboard";
+                //     // userlink.classList.replace("nav-link","btn");
+                //     // userlink.classList.add("btn-primary");
+                //     user.href = "register.html";
+
+                //     signoutlink.innerText = "Login";
+                //     // signoutlink.classList.replace("nav-link","btn");
+                //     // signoutlink.classList.add("btn-success");
+                //     signoutlink.href = "login.html";
+                // }
+
+                // else {
+                //     // userlink.innerText = currentUser.username;
+                //     userlink.innerText = currentUser;
+                //     header.innerText = "welcome " + currentUser;
+                //     // userlink.classList.replace("btn","nav-link");
+                //     // userlink.classList.add("btn-primary");
+                //     userlink.href = "#";
+
+                //     signoutlink.innerText = "Sign Out";
+                //     // signoutlink.classList.replace("btn","nav-link");
+                //     // signoutlink.classList.add("btn-success");
+                //     signoutlink.href = "javascript:Signout()";
+                // }
+            }
+
+
+        </script>
+
+
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 500
+            });
+        </script>
+    </div>
+</body>
+
+</html>

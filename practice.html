@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>BDA Lab</title>
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="people.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/courses.css">
+    
+
+    <style>
+        #addnew {
+            margin-left: 12%;
+            margin-right: 10%;
+        }
+        #pbl {
+            padding: 0.5%;
+            background-color: #041957;
+            color: #fff;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body class="sub_page">
+
+
+    <div class="hero_area">
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <img id="logo" src="images/logo.png" />
+                    </a>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="s-1"> </span>
+                        <span class="s-2"> </span>
+                        <span class="s-3"> </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index1.html">Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index1.html#about_us"> About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faculty1.html"> Faculty</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index1.html#service_id"> Services </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="research_papers1.html">Research Papers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="projects1.html">Projects</a>
+                                  </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index1.html#contact_us">Contact Us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+                        <!-- <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item">
+                                    <a id="userlink" class="nav-link" href="register.html">Register</a>
+                                </li>
+                            </ul>
+
+                            <div class="quote_btn-container ">
+
+                                <span>
+                                    <a id="login" class="nav-link" href="login.html">Login</a>
+                                </span>
+
+
+                            </div>
+                        </div> -->
+
+
+                        <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav ">
+                              <li class="nav-item">
+                                <a id="userlink" class="nav-link" href="admin.html">Back to Dashboard</a>
+                              </li>
+                            </ul>
+              
+                            <!-- <div class="quote_btn-container ">
+              
+                              <span>
+                                <a id="login" class="nav-link" href="login.html">Login as Student</a>
+                              </span>
+              
+              
+                            </div> -->
+                          </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+    </div>
+
+    <section id="addnew">
+        <div id="content">
+            <h4>Add New Course ? </h4>
+            <form id="add-book-form">
+                <input type="text" name="title" placeholder="Course Name">
+                <input type="text" name="heading" placeholder="Course Heading">
+                
+                <button id="pbl">Add New Course</button>
+            </form>
+            <ul id="book-list"></ul>
+            <div class="sect">
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="Abhishek"></div>
+    <!-- course section -->
+    <section class="cousec">
+        <section class="course_section " id="coursesec">
+            <section class="hero-section">
+                <div class="card-grid">
+                  
+                    <!-- <a class="card" href="#">
+                        <div class="card__background" style="background-image: url(images/c2.png)">
+                        </div>
+                        <div class="card__content">
+                            <p class="card__category">Skill Networks</p>
+                            <h3 class="card__heading">IBM Data Analyst</h3>
+                        </div>
+                        <i class="fa fa-trash deleteicon"></i>
+                    </a>
+                   
+                    <a class="card" href="#">
+                        <div class="card__background" style="background-image: url(images/c1.png)">
+                        </div>
+                        <div class="card__content">
+                            <p class="card__category">Data scientists</p>
+                            <h3 class="card__heading">Google Data Analytics</h3>
+                        </div>
+                    </a>
+
+                    <a class="card" href="#">
+                      <div class="card__background"
+                          style="background-image: url(images/c5.png)">
+                      </div>
+                      <div class="card__content">
+                          <p class="card__category">Data Mining</p>
+                          <h3 class="card__heading">Business Analytics</h3>
+                      </div>
+                  </a>
+
+
+                    <a class="card" href="#">
+                        <div class="card__background" style="background-image: url(images/c3.png)">
+                        </div>
+                        <div class="card__content">
+                            <p class="card__category">Skill Networks</p>
+                            <h3 class="card__heading">Introduction to Data Analytics</h3>
+                        </div>
+                        </li>
+                        <a class="card" href="#">
+                            <div class="card__background" style="background-image: url(images/c4.png)">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__category">Project Network</p>
+                                <h3 class="card__heading">Data Analytics using Microsoft Excel</h3>
+                            </div>
+                        </a>
+
+                      
+
+
+                        <a class="card" href="#">
+                          <div class="card__background"
+                              style="background-image: url(images/c5.png)">
+                          </div>
+                          <div class="card__content">
+                              <p class="card__category">Data Mining</p>
+                              <h3 class="card__heading">Business Analytics</h3>
+                          </div>
+                      </a>
+                      <a class="card" href="#">
+                          <div class="card__background"
+                              style="background-image: url(images/c6.png)">
+                          </div>
+                          <div class="card__content">
+                              <p class="card__category">Data Analytics</p>
+                              <h3 class="card__heading">Data Analysis using Python</h3>
+                          </div>
+                      </a>
+                      <a class="card" href="#">
+                          <div class="card__background"
+                              style="background-image: url(images/c7.png)">
+                          </div>
+                          <div class="card__content">
+                              <p class="card__category">Data Visualization</p>
+                              <h3 class="card__heading">Applied Data Science</h3>
+                          </div>
+                          </li>
+                          <a class="card" href="#">
+                              <div class="card__background"
+                                  style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
+                              </div>
+                              <div class="card__content">
+                                  <p class="card__category">Data Crafting</p>
+                                  <h3 class="card__heading">Industrial Data Prediction</h3>
+                              </div>
+                          </a> -->
+                          
+                    <div>
+            </section>
+        </section>
+
+        <!-- <section class="course_section " id="coursesec">
+            <section class="hero-section">
+                <div class="card-grid">
+                    <a class="card" href="#">
+                        <div class="card__background"
+                            style="background-image: url(images/c5.png)">
+                        </div>
+                        <div class="card__content">
+                            <p class="card__category">Data Mining</p>
+                            <h3 class="card__heading">Business Analytics</h3>
+                        </div>
+                    </a>
+                    <a class="card" href="#">
+                        <div class="card__background"
+                            style="background-image: url(images/c6.png)">
+                        </div>
+                        <div class="card__content">
+                            <p class="card__category">Data Analytics</p>
+                            <h3 class="card__heading">Data Analysis using Python</h3>
+                        </div>
+                    </a>
+                    <a class="card" href="#">
+                        <div class="card__background"
+                            style="background-image: url(images/c7.png)">
+                        </div>
+                        <div class="card__content">
+                            <p class="card__category">Data Visualization</p>
+                            <h3 class="card__heading">Applied Data Science</h3>
+                        </div>
+                        </li>
+                        <a class="card" href="#">
+                            <div class="card__background"
+                                style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
+                            </div>
+                            <div class="card__content">
+                                <p class="card__category">Data Crafting</p>
+                                <h3 class="card__heading">Industrial Data Prediction</h3>
+                            </div>
+                        </a>
+                        <div>
+            </section>
+        </section> -->
+
+    </section>
+
+    <!-- end about section -->
+
+    <div class="Abhishek"></div>
+
+    <div class="footer_bg">
+
+
+</html>
+
+<!-- info section -->
+<section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <h3>
+              Hack Inversion
+            </h3>
+            <p>
+              Hack Inversion is a leading Big Data Analyst Company offering Research, Internships, Courses and other
+              opportunities for college students.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_links">
+            <h4>
+              BASIC LINKS
+            </h4>
+            <ul class="  ">
+              <li class="">
+                <a class="" href="index1.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="">
+                <a class="#about_us" href="faculty1.html"> Faculty</a>
+              </li>
+              <li class="">
+                <a class="" href="research_papers1.html"> Research Papers </a>
+              </li>
+              <li class="">
+                <a class="" href="projects1.html">Projects</a>
+              </li>
+              <li class="active">
+                <a class="" href="courses1.html">Courses</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h4>
+              CONTACT DETAILS
+            </h4>
+            <a href="">
+              <div class="img-box">
+                <img src="images/telephone-white.png" width="12px" alt="">
+              </div>
+              <p>
+                +91 9554130568
+              </p>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+              <div class="img-box">
+                <img src="images/envelope-white.png" width="18px" alt="">
+              </div>
+              <p>
+                HackInversion@gmail.com
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <img class="iiita"
+            src="https://upload.wikimedia.org/wikipedia/en/2/2e/Indian_Institute_of_Information_Technology%2C_Allahabad_Logo.png"
+            alt="IIITA Logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+<!-- footer section -->
+<section class="container-fluid footer_section">
+    <div class="container">
+        <p>
+            &copy; <span id="displayYear"></span> All Rights Reserved By
+            <a href=""> Hack Inversion</a>
+        </p>
+    </div>
+</section>
+<!-- footer section -->
+
+</div>
+
+<h3 id="hh"></h3>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAv_Xz86mYp5v2AF5zCW3UTKfawoMG6CmY",
+      authDomain: "bdalab-a74ef.firebaseapp.com",
+      databaseURL: "https://bdalab-a74ef-default-rtdb.firebaseio.com",
+      projectId: "bdalab-a74ef",
+      storageBucket: "bdalab-a74ef.appspot.com",
+      messagingSenderId: "888411043750",
+      appId: "1:888411043750:web:e75d5b675546cd84900167"
+    };
+  
+    import {
+        getFirestore, collection, doc, getDocs, addDoc, deleteDoc, query,
+        where,
+    } from "https://www.gstatic.com/firebasejs/9.20.0/firebase-firestore.js";
+
+
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Get the collection reference and the book list element
+    const colRef = collection(db, 'courses');
+    // const bookList = document.getElementById("book-list");
+    // Render all books in the collection
+
+    getDocs(colRef)
+    .then((snapshot) => {
+        setupGuides(snapshot.docs);
+    })
+    .catch((error) => {
+        console.log("Error getting documents: ", error);
+    })
+
+    //Function to display my css
+    const guideList = document.querySelector('.card-grid');
+    console.log(guideList);
+
+
+    const setupGuides = (data) => {
+        let html = '';
+        let ct=1;
+        data.forEach(docs => {
+            const guide = docs.data();
+
+            const li = `
+                    <a class="card" href="#">
+                        <div class="card__background" style="background-image: url(images/c${ct}.png)">
+                        </div>
+                        <div class="card__content">
+                            <p class="card__category">${guide.category}</p>
+                            <h3 class="card__heading">${guide.heading}</h3>
+                        </div>
+                        <i class="fa fa-trash deleteicon" data-id="${docs.id}"></i>
+                    </a>
+            `;
+
+            html += li;
+
+            guideList.innerHTML = html;
+
+            ct++;
+
+            if(ct>8){
+                ct=1;
+            }
+
+            const deleteIcons = document.querySelectorAll('.deleteicon');
+            deleteIcons.forEach(icon => {
+                icon.addEventListener('click', (e) => {
+                    const id = e.target.getAttribute('data-id');
+                    // console.log(id);
+                    deleteDoc(doc(db, "courses", id)).then(() => {
+                        alert("Course has been deleted successfully.");
+                        console.log("Course has been deleted successfully.");
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    })
+                });
+            });
+
+        })
+
+
+    }
+
+    // Add a new book to the collection
+
+    const form = document.getElementById('add-book-form');
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const booksCollection = collection(db, "courses"); // Get a reference to the "course" collection
+
+        try {
+            await addDoc(booksCollection, {
+                category: form.title.value,
+                heading: form.heading.value,
+    
+            });
+            form.title.value = '';
+            form.heading.value = '';
+            alert("Data added successfully.");
+        } catch (error) {
+            console.error('Error adding document: ', error);
+        }
+    });
+
+    
+
+  </script>
+
+<script>
+    //--------------REFERENCES------------//
+    let userlink = document.getElementById('userlink');
+    let signoutlink = document.getElementById('login');
+    let header = document.getElementById('hh');
+    var currentUser = null;
+
+    //--------------FUNCTIONS------------//
+
+    function getUsername() {
+    let keepLoggedIn = localStorage.getItem("keepLoggedIn");
+
+    if (keepLoggedIn == "yes") {
+        currentUser = JSON.parse(localStorage.getItem('user'));
+    }
+    else {
+        currentUser = JSON.parse(sessionStorage.getItem('user'));
+    }
+    }
+
+    function Signout() {
+    sessionStorage.removeItem('user');
+    localStorage.removeItem('user');
+    localStorage.removeItem('keepLoggedIn');
+    window.location = "index1.html";
+    }
+
+    //--------------WINDOW LOADS------------//
+
+    window.onload = function () {
+    getUsername();
+    if (currentUser == null) {
+        userlink.innerText = "Back to Dashboard";
+        // userlink.classList.replace("nav-link","btn");
+        // userlink.classList.add("btn-primary");
+        user.href = "register.html";
+
+        signoutlink.innerText = "Login";
+        // signoutlink.classList.replace("nav-link","btn");
+        // signoutlink.classList.add("btn-success");
+        signoutlink.href = "login.html";
+    }
+
+    else {
+        userlink.innerText = currentUser;
+        header.innerText = "welcome " + currentUser;
+        // userlink.classList.replace("btn","nav-link");
+        // userlink.classList.add("btn-primary");
+        userlink.href = "#";
+
+        signoutlink.innerText = "Sign Out";
+        // signoutlink.classList.replace("btn","nav-link");
+        // signoutlink.classList.add("btn-success");
+        signoutlink.href = "javascript:Signout()";
+    }
+    }
+
+
+</script>
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 500
+    });
+</script>
+</body>
+
+</html>
